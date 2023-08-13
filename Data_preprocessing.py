@@ -6,8 +6,6 @@ Created on Thu Jun  8 14:20:18 2023
 """
 
 import pandas as pd
-# df = pd.read_csv("/content/raw.githubusercontent.com_Strifee_arabic2english_main_data_arabic_english.txt",delimiter="\t",names=["eng","ar"])
-# df.shape, df.head()
 
 def data_preprocessing(source_data, target_data):
     target_data.rename(columns={"sent":"target_lang", "sentID.BTEC":"ID"}, inplace = True)
@@ -60,5 +58,5 @@ def data_preprocessing_corpus_6(source_data, target_data):
     return data
 
 
-# data2.to_csv(".\trgt_train", sep="\t",columns = ["target_lang", "source_lang"],index=False)
+
 
